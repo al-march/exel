@@ -3,7 +3,7 @@ import "./scss/main.scss"
 
 
 async function start () {
-  await Promise.resolve
+  return await Promise.resolve('async worked!')
 }
 
-start()
+start().then(res => console.log(res))
